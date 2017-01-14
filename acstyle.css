@@ -1,0 +1,1117 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600);
+/* CSS Document */
+
+body {
+	background-color: #252525;
+	background-image: url(images/background.png);
+	background-repeat: repeat;
+	background-position: center, top;
+	background-attachment: fixed;
+	width: 100%;
+	font-size: 14px;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFF;
+	font-family: 'Open Sans', sans-serif;
+
+}
+
+a {
+	color: #FFF;
+	text-decoration: underline;
+	
+}
+
+a:link {
+	color: #FFF;
+	text-decoration: underline;
+	
+}
+
+a:visted {
+	color: #636363;
+	text-decoration: underline;
+	
+}
+
+a:hover {
+	color: #898989;
+	text-decoration: underline;
+
+}
+
+a:active {
+	color: #636363;
+	text-decoration: underline;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-style: normal;
+	font-weight: 800;
+	font-family: 'Open Sans', sans-serif ;
+	color: #FFF;
+	letter-spacing: -2px;
+
+}
+
+h1 {
+	font-size: 72px;
+
+}
+
+h2 {
+	font-size: 60px;
+
+}
+
+h3 {
+	font-size: 48px;
+
+}
+
+h4 {
+	font-size: 36px;
+
+}
+
+h5 {
+	font-size: 30px;
+
+}
+
+h6 {
+	font-size: 24px;
+	
+}
+
+button:focus {
+	outline: 0;
+	
+}
+
+#play {
+	width: 25px;
+	height: 25px;
+	background: url(images/play.png);
+	padding: 0;
+	border: none;
+	float: left;
+	cursor: pointer;
+	
+}
+
+#playeffect {
+	width:25px;
+	height: 25px;
+	background: url(images/play1.png);
+	padding: 0;
+	border: none;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+}
+
+#playeffect:hover {
+	opacity: 1.0;
+	
+}
+
+#pause {
+	width: 25px;
+	height: 25px;
+	background: url(images/pause.png);
+	padding: 0;
+	border: none;
+	float: left;
+	cursor: pointer;
+	
+}
+
+#pauseeffect {
+	width: 25px;
+	height: 25px;
+	background: url(images/pause1.png);
+	padding: 0;
+	border: none;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+}
+
+#pauseeffect:hover {
+	opacity: 1.0;
+	
+}
+
+#volumeup {
+	width: 25px;
+	height: 25px;
+	background: url(images/volumeup.png);
+	padding: 0;
+	border: none;
+	float: left;
+	cursor: pointer;
+	
+}
+
+#volumeupeffect {
+	width: 25px;
+	height: 25px;
+	background: url(images/volumeup1.png);
+	padding: 0;
+	border: none;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+}
+
+#volumeupeffect:hover {
+	opacity: 1.0;
+	
+}
+
+#volumedown {
+	width: 25px;
+	height: 25px;
+	background: url(images/volumedown.png);
+	padding: 0;
+	border: none;
+	cursor: pointer;
+	
+}
+
+#volumedowneffect {
+	width: 25px;
+	height: 25px;
+	background: url(images/volumedown1.png);
+	padding: 0;
+	border: none;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+}
+
+#volumedowneffect:hover {
+	opacity: 1.0;
+	
+}
+
+#skills {
+	border-collapse: collapse;
+	border: 0px solid black;
+	float: right;
+	margin-bottom: 0px;
+
+}
+
+th, td {
+	padding-bottom: 5px;
+	border-collapse: collapse;
+	border: 0px solid black;
+	height: 20px;
+
+}
+
+#lvl { 
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #898989;
+	padding-left: 3px;
+}
+
+#container {
+	width: 100%;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	
+}
+
+#headercontainer {
+	height: 172px;
+	width: 1000px;
+	overflow: visible;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+
+}
+
+#header {
+	background-image: url(images/headerbg.png);
+	background-repeat: repeat-x;
+	width: 100%;
+	min-width: 1000px;
+	height: 172px;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	position: static;
+	
+}
+
+#nav {
+	width: 1000px;
+	margin: auto;
+	padding: 0px;
+	position: relative;
+
+}
+
+#navlist {
+	width: 1000px;
+	margin: auto;
+	padding: 0px;
+	list-style-type: none;
+	position: relative;
+	
+}
+
+#navlink {
+	float: left;
+	text-decoration: none;
+	color: white;
+	background-color: transparent;
+	margin: auto;
+	padding: 0px;
+
+}
+
+#navindex {
+    background-image: url(images/aclogo.png);
+	background-repeat: no-repeat;
+	width: 295px;
+	height: 166px;
+	position: absolute;
+	left: 355px;
+	top: 5px;
+
+}
+
+#navindexeffect {
+    background-image: url(images/aclogo1.png);
+	background-repeat: no-repeat;
+	width: 295px;
+	height: 166px;
+	position: absolute;
+	top: 5px;
+	left: 355px;
+	opacity:0.0;
+	-webkit-transition:opacity 0.5s; /* For Safari 3.1 to 6.0 */
+	transition:opacity 0.5s;
+
+}
+
+#navindexeffect:hover {
+	opacity:1.0;
+}
+
+#navportfolio {
+    background-image: url(images/portfolio.png);
+	background-repeat: no-repeat;
+	width: 368px;
+	height: 34px;
+	position: absolute;
+	top: 68px;
+	left: -7px;
+
+}
+
+#navportfolioeffect {
+    background-image: url(images/portfolio2.png);
+	background-repeat: no-repeat;
+	width: 368px;
+	height: 34px;
+	position: absolute;
+	top: 68px;
+	left: -7px;
+	opacity:0.0;
+	-webkit-transition:opacity 0.5s; /* For Safari 3.1 to 6.0 */
+	transition:opacity 0.5s;
+
+}
+
+#navportfolioeffect:hover {
+	opacity:1.0;
+}
+
+#navcontact {
+    background-image: url(images/contact.png);
+	background-repeat: no-repeat;
+	width: 313px;
+	height: 34px;
+	position: absolute;
+	top: 68px;
+	left: 638px;
+
+}
+
+#navcontacteffect {
+    background-image: url(images/contact2.png);
+	background-repeat: no-repeat;
+	width: 313px;
+	height: 34px;
+	position: absolute;
+	top: 68px;
+	left: 638px;
+	opacity:0.0;
+	-webkit-transition:opacity 0.5s; /* For Safari 3.1 to 6.0 */
+	transition:opacity 0.5s;
+}
+
+#navcontacteffect:hover {
+	opacity:1.0;
+}
+
+#bodycontainer {
+	width: 1000px;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	overflow-x: hidden;
+
+}
+
+#welcomebanner {
+	background-image: url(images/welcomebanner.png);
+	background-repeat: no-repeat;
+	width: 1000px;
+	height: 157px;
+	position: relative;
+	margin-top: 21px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#portfoliobanner {
+	background-image: url(images/portfoliobanner.png);
+	background-repeat: no-repeat;
+	width: 1000px;
+	height: 119px;
+	position: relative;
+	margin-top: 21px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#contactbanner {
+	background-image: url(images/contactbanner.png);
+	background-repeat: no-repeat;
+	width: 1000px;
+	height: 119px;
+	position: relative;
+	margin-top: 21px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#divider {
+	background-image: url(images/divider.png);
+	background-repeat: no-repeat;
+	width: 930px;
+	height: 60px;
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#divider2 {
+	background-image: url(images/divider2.png);
+	background-repeat: no-repeat;
+	width: 400px;
+	height: 60px;
+	position: relative;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#lrcontainer {
+	width: 950px;
+	padding: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+
+}
+
+#leftbody {
+	background-color: transparent;
+	width: 475px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	display: block;
+	float: left;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	overflow: hidden;
+	position: relative;
+	text-align: justify;
+
+}
+
+#rightbody {
+	background-color: transparent;
+	width: 475px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	display: block;
+	float: left;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	overflow: hidden;
+	position: relative;
+	text-align: justify;
+
+}
+
+#footercontainer {
+	background-image: url(images/footer.png);
+	font-size: 14px;
+	display: block;
+	clear: both;
+	height: 180px;
+	width: 1000px;
+	text-align: center;
+	padding: 0px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow: hidden;
+	position: relative;
+
+}
+
+#leftfooter {
+	font-size: 14px;
+	display: block;
+	float: left;
+	height: 132px;
+	width: 500px;
+	text-align: left;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	overflow: visible;
+	position: relative;
+	
+}
+	
+#rightfooter {
+	font-size: 14px;
+	display: block;
+	float: left;
+	height: 132px;
+	width: 500px;
+	text-align: right;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	overflow: visible;
+	position: relative;
+
+}
+
+#bottomfooter {
+	font-size: 12px;
+	font-weight: 300;
+	display: block;
+	clear: both;
+	height: 48px;
+	width: 1000px;
+	text-align: center;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	overflow: hidden;
+	position: relative;
+
+}
+
+#facebook {
+	position: relative;
+	background: url(images/facebook.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	margin-top: 0px;
+	float: left;
+	width: 50px;
+	height: 50px;
+
+}
+
+#facebookeffect {
+	position: absolute;
+	background: url(images/facebook1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#facebookeffect:hover {
+	opacity: 1.0;
+	
+}
+
+#twitter {
+	position: relative;
+	background: url(images/twitter.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	margin-top: 0px;
+	float: left;
+	width: 50px;
+	height: 50px;
+
+}
+
+#twittereffect {
+	position: absolute;
+	background: url(images/twitter1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#twittereffect:hover {
+	opacity: 1.0;
+	
+}
+
+#linkedin {
+	position: relative;
+	background: url(images/linkedin.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	margin-top: 0px;
+	float: left;
+	width: 50px;
+	height: 50px;
+
+}
+
+#linkedineffect {
+	position: absolute;
+	background: url(images/linkedin1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#linkedineffect:hover {
+	opacity: 1.0;
+	
+}
+
+#email {
+	position: relative;
+	background: url(images/email.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	margin-top: 0px;
+	float: left;
+	width: 50px;
+	height: 50px;
+
+}
+
+#emaileffect {
+	position: absolute;
+	background: url(images/email1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#emaileffect:hover {
+	opacity: 1.0;
+	
+}
+
+#top {
+	position: relative;
+	background: url(images/top.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 25px;
+	margin-top: 0px;
+	float: right;
+	width: 50px;
+	height: 50px;
+
+}
+
+#topeffect {
+	position: absolute;
+	background: url(images/top1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#topeffect:hover {
+	opacity: 1.0;
+	
+}
+
+#contact {
+	position: relative;
+	background: url(images/contacticon.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 25px;
+	margin-top: 0px;
+	float: right;
+	width: 50px;
+	height: 50px;
+
+}
+
+#contacteffect {
+	position: absolute;
+	background: url(images/contacticon1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#contacteffect:hover {
+	opacity: 1.0;
+	
+}
+
+#portfolio {
+	position: relative;
+	background: url(images/portfolioicon.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 25px;
+	margin-top: 0px;
+	float: right;
+	width: 50px;
+	height: 50px;
+
+}
+
+#portfolioeffect {
+	position: absolute;
+	background: url(images/portfolioicon1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#portfolioeffect:hover {
+	opacity: 1.0;
+	
+}
+
+#home {
+	position: relative;
+	background: url(images/home.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 25px;
+	margin-top: 0px;
+	float: right;
+	width: 50px;
+	height: 50px;
+
+}
+
+#homeeffect {
+	position: absolute;
+	background: url(images/home1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#homeeffect:hover {
+	opacity: 1.0;
+	
+}
+
+#previous {
+	position: relative;
+	background: url(images/previous.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 25px;
+	margin-top: 0px;
+	float: left;
+	width: 150px;
+	height: 40px;
+
+}
+
+#previouseffect {
+	position: absolute;
+	background: url(images/previous1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 40px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#previouseffect:hover {
+	opacity: 1.0;
+	
+}
+
+#next {
+	position: relative;
+	background: url(images/next.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-right: 0px;
+	margin-top: 0px;
+	float: left;
+	width: 150px;
+	height: 40px;
+
+}
+
+#nexteffect {
+	position: absolute;
+	background: url(images/next1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 40px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#nexteffect:hover {
+	opacity: 1.0;
+	
+}
+
+#facebook2 {
+	position: relative;
+	background: url(images/facebook.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 0px;
+	margin-top: 0px;
+	float: left;
+	width: 50px;
+	height: 50px;
+
+}
+
+#facebookeffect2 {
+	position: absolute;
+	background: url(images/facebook1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#facebookeffect2:hover {
+	opacity: 1.0;
+	
+}
+
+#twitter2 {
+	position: relative;
+	background: url(images/twitter.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	margin-top: 0px;
+	float: left;
+	width: 50px;
+	height: 50px;
+
+}
+
+#twittereffect2 {
+	position: absolute;
+	background: url(images/twitter1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#twittereffect2:hover {
+	opacity: 1.0;
+	
+}
+
+#linkedin2 {
+	position: relative;
+	background: url(images/linkedin.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	margin-top: 0px;
+	float: left;
+	width: 50px;
+	height: 50px;
+
+}
+
+#linkedineffect2 {
+	position: absolute;
+	background: url(images/linkedin1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#linkedineffect2:hover {
+	opacity: 1.0;
+	
+}
+
+#email2 {
+	position: relative;
+	background: url(images/email.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-left: 25px;
+	margin-top: 0px;
+	float: left;
+	width: 50px;
+	height: 50px;
+
+}
+
+#emaileffect2 {
+	position: absolute;
+	background: url(images/email1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 50px;
+	height: 50px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#emaileffect2:hover {
+	opacity: 1.0;
+	
+}
+
+#work {
+	position: relative;
+	background: url(images/work.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	float: left;
+	margin-left: 25px;
+	margin-bottom: 25px;
+	width: 150px;
+	height: 40px;
+
+}
+
+#workeffect {
+	position: absolute;
+	background: url(images/work1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 40px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#workeffect:hover {
+	opacity: 1.0;
+	
+}
+
+#resume {
+	position: relative;
+	background: url(images/resume.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	float: right;
+	margin-right: 25px;
+	margin-bottom: 5px;
+	width: 150px;
+	height: 40px;
+
+}
+
+#resumeeffect {
+	position: absolute;
+	background: url(images/resume1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 40px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#resumeeffect:hover {
+	opacity: 1.0;
+	
+}
+
+#vtw {
+	position: relative;
+	background: url(images/viewthework.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 0px;
+	width: 150px;
+	height: 40px;
+	left: 55px;
+
+}
+
+#vtweffect {
+	position: absolute;
+	background: url(images/viewthework1.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 150px;
+	height: 40px;
+	z-index: 2;
+	opacity: 0.0;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5;
+	
+}
+
+#vtweffect:hover {
+	opacity: 1.0;
+	
+}
