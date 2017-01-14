@@ -9,5 +9,5 @@ Main Pages:
 - portfolio.html
 - contact.html
 
-Main CSS
+Main CSS:
 - acstyle.css
